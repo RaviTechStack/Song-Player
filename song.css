@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 77);
+}
+.flex{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: rgb(248, 93, 119);
+    padding-right: .5rem;
+}
+.companyName{
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+    padding-right: 1.4rem;
+}
+.nav-bar{
+    height: 7vh;
+    background-color: black;
+    align-items: center;
+}
+.nav-bar li{
+    list-style: none;
+    color: rgb(227, 227, 227);
+    padding: 0 .6rem;
+}
+.middle-view{
+    min-height: 80vh;
+}
+.song-conatiner{
+    background: url("./songImage/background.jpg") center no-repeat;
+    width: 75%;
+    height: 78vh;
+    border-radius: 9px;
+    color: white;
+    padding: .4rem 0 .4rem .5rem;
+    overflow: scroll;
+    box-shadow: -1px -1px 3px rgb(255, 255, 255);
+}
+.song-conatiner::-webkit-scrollbar{
+    display: none;
+}
+
+.songitem{
+    background-color: white;
+    box-shadow: 5px 5px 12px rgb(0, 0, 0);
+    width: 33%;
+    color: black;
+    padding: .2rem 1.3rem .2rem 0.1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cover1{
+    width: 3rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.progress{
+    flex-direction: column;
+    height: fit-content;
+    background-color: black;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 1rem;
+    color: white;
+
+}
+#progress-bar{
+    width: 70%;
+    background-color: blue;
+}
+
+.icons{
+    font-size: 2.5rem;
+    gap: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+.arrow{
+    font-size: 2rem;
+    padding: 3px 1rem;
+    color: white;
+    border-radius: 9px;
+    font-weight: 900;
+    background-color: rgb(205, 25, 125);
+}
+
+@media (max-width : 1150px){
+    .logo{
+        font-size: 1.5rem;
+    }
+}
